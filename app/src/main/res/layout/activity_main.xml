@@ -18,29 +18,51 @@
         android:text="Your Music = You"/>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/title">
+        android:layout_height="273dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/playlists"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/playlists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPlaylists"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="My Playlists"
+            android:textSize="@dimen/TextMed20"
+            android:textStyle="bold" />
 
-        android:text="My Playlists"/>
+        <TextView
+            android:id="@+id/albums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorAlbums"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="My Albums"
+            android:textAlignment="center"
+            android:textSize="@dimen/TextMed20"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/albums"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="My Albums"/>
-
-    <TextView
-        android:id="@+id/songs"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="My Songs"/>
+        <TextView
+            android:id="@+id/songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorSongs"
+            android:gravity="end"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="My Songs"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/TextMed20"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -49,7 +71,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="@dimen/TextMedLarge"
         android:layout_alignParentBottom="true"
         android:background="@color/colorAccent"
         android:text="You Are What You Listen To"/>

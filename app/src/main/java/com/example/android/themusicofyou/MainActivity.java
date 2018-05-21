@@ -21,11 +21,42 @@ public class MainActivity extends AppCompatActivity {
         //Create album intent
         final Intent albumsIntent = new Intent(MainActivity.this, Albums.class);
 
-        //Attach OnClickListener to the view
+        //Attach OnClickListener to the album view
         albumView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(albumsIntent);
+            }
+
+        });
+
+
+        //Find the view to connect OnClickListener to the playlists view
+        TextView playlistsView = findViewById(R.id.playlists);
+
+        //Create playlists intent
+        final Intent playlistsIntent = new Intent(MainActivity.this, Playlists.class);
+
+        //Attach OnClickListener to the playlist view
+        playlistsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(playlistsIntent);
+            }
+
+        });
+
+        //Find the view to connect OnClickListener to the songs view
+        TextView songsView = findViewById(R.id.songs);
+
+        //Create songs intent
+        final Intent songsIntent = new Intent(MainActivity.this, Songs.class);
+
+        //Attach OnClickListener to the songs view
+        songsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(songsIntent);
             }
 
         });
