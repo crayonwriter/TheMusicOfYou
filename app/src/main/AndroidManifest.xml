@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Playlists"
-            android:label="Your Playlist"/>
+            android:label="Your Playlists"/>
         <activity android:name=".Albums"
             android:label="Your Albums"/>
         <activity android:name=".Songs"
