@@ -31,7 +31,7 @@ public class Songs extends AppCompatActivity {
         songs.add("Dimelo");
 
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, songs);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, songs);
 
         ListView songListView = findViewById(R.id.songList);
 
