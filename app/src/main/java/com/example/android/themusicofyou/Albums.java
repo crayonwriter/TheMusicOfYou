@@ -9,5 +9,7 @@ public class Albums extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_albums);
+
+        //Make a GridView for the albums, don't forget to make number of columns in the XML
     }
 }

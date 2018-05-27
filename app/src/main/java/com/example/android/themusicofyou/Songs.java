@@ -30,8 +30,6 @@ public class Songs extends AppCompatActivity {
         songs.add("Suerte");
         songs.add("Dimelo");
 
-        //Find the view in the XML that we're going to amend, and assign it to a variable
-        LinearLayout rootView = findViewById(R.id.rootView);
 
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, songs);
 
