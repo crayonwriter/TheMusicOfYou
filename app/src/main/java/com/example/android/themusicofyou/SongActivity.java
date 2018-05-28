@@ -15,17 +15,17 @@ public class SongActivity extends AppCompatActivity {
 
         //Create arraylist for songs and added some songs.
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Despacito", "Luis Fonsi & Daddy Yankee", "test"));
-        songs.add(new Song("Bailando", "Enrique Iglesias", "test"));
-        songs.add(new Song("X", "Nicky Jam", "test"));
-        songs.add(new Song("Danza Guduro", "Lucenzo", "test"));
-        songs.add(new Song("Posé", "Daddy Yankee", "test"));
-        songs.add(new Song("Desnuda", "Ricardo Arjana", "test"));
-        songs.add(new Song("El Problema", "Ricardo Arjana", "test"));
-        songs.add(new Song("Tal Vez", "Ricky Martin", "test"));
-        songs.add(new Song("Taboo", "Don Omar", "test"));
-        songs.add(new Song("Suerte", "Shakira", "test"));
-        songs.add(new Song("Dimelo", "Enrique Iglesias", "test"));
+        songs.add(new Song("Despacito", "Luis Fonsi & Daddy Yankee", "Despacito"));
+        songs.add(new Song("Bailando", "Enrique Iglesias", "Sex and Love"));
+        songs.add(new Song("X", "Nicky Jam", "X"));
+        songs.add(new Song("Danza Kuduro", "Lucenzo", "Don Omar Presents: Meet the Orphans"));
+        songs.add(new Song("Pose", "Daddy Yankee", "Talento de Barrio"));
+        songs.add(new Song("Desnuda", "Ricardo Arjana", "Sin Daños a Terceros"));
+        songs.add(new Song("El Problema", "Ricardo Arjana", "Santo Pecado"));
+        songs.add(new Song("Tal Vez", "Ricky Martin", "Almas Del Silencio"));
+        songs.add(new Song("Taboo", "Don Omar", "Don Omar Presents: Meet the Orphans"));
+        songs.add(new Song("Suerte", "Shakira", "Laundry Service"));
+        songs.add(new Song("Dimelo", "Enrique Iglesias", " Insomniac"));
 
 
         SongAdapter adapter = new SongAdapter(this, songs);
