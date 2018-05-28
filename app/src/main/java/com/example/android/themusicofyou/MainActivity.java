@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         TextView albumView = findViewById(R.id.albums);
 
         //Create album intent
-        final Intent albumsIntent = new Intent(MainActivity.this, Albums.class);
+        final Intent albumsIntent = new Intent(MainActivity.this, AlbumsActivity.class);
 
         //Attach OnClickListener to the album view
         albumView.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         TextView playlistsView = findViewById(R.id.playlists);
 
         //Create playlists intent
-        final Intent playlistsIntent = new Intent(MainActivity.this, Playlists.class);
+        final Intent playlistsIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
 
         //Attach OnClickListener to the playlist view
         playlistsView.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         TextView songsView = findViewById(R.id.songs);
 
         //Create songs intent
-        final Intent songsIntent = new Intent(MainActivity.this, Songs.class);
+        final Intent songsIntent = new Intent(MainActivity.this, SongActivity.class);
 
         //Attach OnClickListener to the songs view
         songsView.setOnClickListener(new View.OnClickListener() {

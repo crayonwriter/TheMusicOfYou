@@ -3,7 +3,7 @@ package com.example.android.themusicofyou;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Albums extends AppCompatActivity {
+public class AlbumsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

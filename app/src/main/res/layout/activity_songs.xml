@@ -6,6 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.themusicofyou.Songs"
+    tools:context="com.example.android.themusicofyou.SongActivity"
     android:id="@+id/songList">
    </ListView>
