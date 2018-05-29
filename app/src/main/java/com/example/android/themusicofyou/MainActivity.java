@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         TextView playlistsView = findViewById(R.id.playlists);
 
         //Create playlists intent
-        final Intent playlistsIntent = new Intent(MainActivity.this, PlaylistsActivity.class);
+        final Intent playlistsIntent = new Intent(MainActivity.this, PlaylistActivity.class);
 
         //Attach OnClickListener to the playlist view
         playlistsView.setOnClickListener(new View.OnClickListener() {
