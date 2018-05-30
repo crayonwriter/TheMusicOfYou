@@ -26,12 +26,17 @@ public class NowPlayingActivity extends AppCompatActivity {
 
 
         // Display song data
-        songView.setText(title);
-        artistView.setText(artist);
-        albumView.setText(album);
-        numberOfSongsView.setText(numberOfSongs);
+        songView.setText(new StringBuilder().append("Song Title: ").append(title).toString());
+        artistView.setText(new StringBuilder().append("Artist: ").append(artist).toString());
+        albumView.setText(new StringBuilder().append("Album: ").append(album).toString());
+        if (numberOfSongs == null) {
+            return;
+        } else {
+            numberOfSongsView.setText(new StringBuilder().append("Number of Songs: ").append(numberOfSongs).toString());
 
+        }
+    }
     }
 
 
-}
+
