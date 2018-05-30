@@ -28,4 +28,8 @@ public class PlaylistActivity extends AppCompatActivity {
 
         playlistListView.setAdapter(adapter);
     }
+
+
 }
+
+

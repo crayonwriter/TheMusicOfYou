@@ -18,11 +18,20 @@
         </activity>
         <activity
             android:name=".PlaylistActivity"
-            android:label="Your Playlists"/>
-        <activity android:name=".AlbumsActivity"
-            android:label="Your Albums"/>
-        <activity android:name=".SongActivity"
-            android:label="Your Songs"/>
+            android:label="Your Playlists" />
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="Your Albums" />
+        <activity
+            android:name=".SongActivity"
+            android:label="Your Songs" />
+        <activity android:name=".NowPlayingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

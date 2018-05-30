@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NowPlayingActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Now Playing"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/TextMedLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/songNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Song" />
+
+        <TextView
+            android:id="@+id/artistNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Artist" />
+
+        <TextView
+            android:id="@+id/albumNowPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Album" />
+
+    </LinearLayout>
+
+</RelativeLayout>
