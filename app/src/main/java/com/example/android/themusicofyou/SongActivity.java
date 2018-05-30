@@ -55,12 +55,3 @@ public class SongActivity extends AppCompatActivity {
 
 
 }
-//    Sending objects between activities – Android putExtra method
-//        This is the code that puts SMSData object in an intent using putExtra method and starts a new activity. SMSData object is available for the new SMSActivity activity that was just started.
-//
-//// Create an intent
-//        Intent intent = new Intent(this, ActivityClass.class);
-//        intent.putExtra("key", yourObjectInstance);
-//
-//// Start activity
-//        startActivity(intent);

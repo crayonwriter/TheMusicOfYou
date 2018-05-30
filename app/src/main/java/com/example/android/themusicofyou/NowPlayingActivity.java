@@ -15,25 +15,23 @@ public class NowPlayingActivity extends AppCompatActivity {
         TextView songView = findViewById(R.id.songNowPlaying);
         TextView artistView = findViewById(R.id.artistNowPlaying);
         TextView albumView = findViewById(R.id.albumNowPlaying);
+        TextView numberOfSongsView = findViewById(R.id.numberOfSongsAlbum);
 
         // Get song data
         Intent intent = getIntent();
         String title = intent.getStringExtra("Title:");
         final String artist = intent.getStringExtra("Artist:");
         String album = intent.getStringExtra("Album:");
+        String numberOfSongs = intent.getStringExtra("NumberOfSongs:");
 
 
         // Display song data
         songView.setText(title);
         artistView.setText(artist);
         albumView.setText(album);
+        numberOfSongsView.setText(numberOfSongs);
 
     }
 
 
 }
-
-//    To read data that was send to the activity using putExtra method use this code.
-//
-//        1
-//        YourType yourObjectInstance = (YourType)getIntent().getExtras().get("key");

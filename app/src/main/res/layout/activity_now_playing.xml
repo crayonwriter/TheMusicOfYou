@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             tools:text="Album" />
 
+        <TextView
+            android:id="@+id/numberOfSongsAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Number of songs" />
+
     </LinearLayout>
 
 </RelativeLayout>

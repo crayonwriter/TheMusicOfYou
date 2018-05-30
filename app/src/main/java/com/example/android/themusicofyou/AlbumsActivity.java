@@ -1,8 +1,11 @@
 //Make a GridView for the albums, don't forget to make number of columns in the XML
 package com.example.android.themusicofyou;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ListView;
 
@@ -20,7 +23,7 @@ public class AlbumsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_albums);
 
         //Create arraylist for songs and added some songs.
-        ArrayList<Album> albums = new ArrayList<Album>();
+        final ArrayList<Album> albums = new ArrayList<Album>();
         albums.add(new Album("Despacito", "Luis Fonsi & Daddy Yankee", "#"));
         albums.add(new Album("Sex and Love", "Enrique Iglesias", "#"));
         albums.add(new Album("X", "Nicky Jam", "#"));
@@ -38,6 +41,20 @@ public class AlbumsActivity extends AppCompatActivity {
         GridView albumGridView = findViewById(R.id.albumGrid);
 
         albumGridView.setAdapter(adapter);
+
+        albumGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Get album's data from the album arrayList
+                Album albumPlaying = albums.get(position);
+                Intent intent = new Intent(AlbumsActivity.this, NowPlayingActivity.class);
+                intent.putExtra("Album:", albumPlaying.getAlbumTitle());
+                intent.putExtra("Artist:", albumPlaying.getAlbumArtist());
+                intent.putExtra("NumberOfSongs:", albumPlaying.getNumberOfSongs());
+                startActivity(intent);
+            }
+        });
+//
     }
-}
+    }
 
