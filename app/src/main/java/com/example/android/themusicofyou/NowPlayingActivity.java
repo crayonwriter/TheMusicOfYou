@@ -26,7 +26,13 @@ public class NowPlayingActivity extends AppCompatActivity {
 
 
         // Display song data
-        songView.setText(new StringBuilder().append("Song Title: ").append(title).toString());
+        //TODO Fix the title if/else issue
+        if (title == null) {
+
+        } else {
+            songView.setText(new StringBuilder().append("Song Title: ").append(title).toString());
+        }
+
         artistView.setText(new StringBuilder().append("Artist: ").append(artist).toString());
         albumView.setText(new StringBuilder().append("Album: ").append(album).toString());
         if (numberOfSongs == null) {
@@ -36,7 +42,7 @@ public class NowPlayingActivity extends AppCompatActivity {
 
         }
     }
-    }
+}
 
 
 

@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/songTitle"
-        tools:text="Sample Song"/>
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sample Song" />
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/songTitle"
+            tools:text="Sample Artist" />
+
+        <TextView
+            android:id="@+id/albumTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/songArtist"
+            tools:text="Sample Album" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/songArtist"
-        tools:text="Sample Artist"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/albumTitle"
-        tools:text="Sample Album"/>
-
-</LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/layout"
+        android:paddingLeft="20dp"
+        android:src="@drawable/playbutton" />
+    <!-- Image credit - http://www.clker.com/clipart-purple-play-button.html -->
+</RelativeLayout>

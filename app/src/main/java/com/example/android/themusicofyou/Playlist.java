@@ -1,7 +1,7 @@
 package com.example.android.themusicofyou;
 
 /**
- * Declaration of the Album custom class, which represents an album, the album's artist, and the number of songs
+ * Declaration of the Playlist custom class, which represents an album, the album's artist, and the number of songs
  * and also the methods to retrieve them.
  */
 
