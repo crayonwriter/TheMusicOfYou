@@ -1,8 +1,10 @@
 package com.example.android.themusicofyou;
 
 import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -16,7 +18,7 @@ public class SongActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_songs);
-
+        
         //Create arraylist for songs and added some songs.
         final ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Despacito", "Luis Fonsi & Daddy Yankee", "Despacito"));
@@ -52,6 +54,5 @@ public class SongActivity extends AppCompatActivity {
         });
 //
     }
-
 
 }
